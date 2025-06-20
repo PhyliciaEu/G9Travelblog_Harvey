@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet"href="style.css">
+</head>
+<body>
+<header><h1>Gallery</h1></header>
+<nav><ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="destinations.html">Destinations</a></li>
+<li><a href="Tips.html">Tips</a></li>
+<li><a class="active" href="Gallery.html">Gallery</a></li>
+<li><a href="Booking.html">Booking</a></li>
+<li><a href="about.html">About me</a></li>
+</ul></nav>
+<main><center><p>Check out below for the image slideshow of Fuzhou landmarks.</h2>
+<img class="mySlides" src="images/spring.jpg">
+<img class="mySlides" src="images/summer.jpg">
+<img class="mySlides" src="images/autumn.jpg">
+<img class="mySlides" src="images/winter.jpg">
+<script>
+var slideIndex = 0;
+show();
+
+function show(){
+var i;
+var x =
+document.getElementsByClassName("mySlides");
+ for (i = 0;i < x.length; i++){
+ x[i].style.display = "none";
+}
+slideIndex++;
+if (slideIndex > x.length){
+slideIndex = 1
+}
+x[slideIndex-1].style.display = "block";
+setTimeout(show,2500);
+}
+</script> 
+<footer><p>&copy;2025 Harvey's Blog</p></footer>
+</body>
+</html>

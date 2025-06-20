@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet"href="style.css">
+</head>
+<body>
+<header><h1>Booking Form</h1></header>
+<nav><ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="destinations.html">Destinations</a></li>
+<li><a href="Tips.html">Tips</a></li>
+<li><a href="Gallery.html">Gallery</a></li>
+<li><a class="active" href="Booking.html">Booking</a></li>
+<li><a href="about.html">About me</a></li>
+</ul></nav>
+<main style="display:flex;justify-content:center;">
+<form id="myform">
+<fieldset>
+<legend>Step 1:Tourist Information</legend>
+<p>Full Name:<input type="text" name="name"></p>
+<p>Email:<input name="email" type="email" placeholder="example@domain.com" required></p>
+<p>Phone:<input type="tel" name="phone" placeholder="+86" required></p>
+<p>Nationality:<input type="text" name="nationality"></p>
+</fieldset><br />
+<fieldset>
+<legend>Step2:Tour Details</legend>
+<p>Tour Date:<input name="dob" type="date"></p>
+<p>Group Size:<input type="number" name="num"></p>
+<p>Tour Duration:<select name="duration">
+<option>Select duration</option>
+<option value="1day">1day</option>
+<option value="2days">2days</option></select></p>
+<p>Preferred Language:<input type="radio" name="language" value="Mandarin">Mandarin<input type="radio" name="language" value="English">English</p>
+</p>
+</fieldset><br />
+<fieldset>
+<legend>Step 3:Places to Visit</legend>
+<p>select attractions<br />
+<input type="checkbox" name="vehicle" value="Sanfang Qixiang">Sanfang Qixiang</p>
+<input type="checkbox" name="vehicle" value="Jinshan Temple">Jinshan Temple</p>
+<input type="checkbox" name="vehicle" value="West Lake Park">West Lake Park</p>
+<input type="checkbox" name="vehicle" value="Pingtan Island">Pingtan Island</p>
+<p>Special Requests:<textarea name="address" cols=30 rows=8></textarea></p>
+</fieldset><br />
+<input type="submit" value="BOOK TOUR">
+</form>
+</main>
+<footer><p>&copy;2025 Harvey's Blog</p></footer>
+</body>
+</html>
